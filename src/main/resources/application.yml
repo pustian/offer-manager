@@ -1,0 +1,5 @@
+spring:
+    application:
+        name: offer-manager
+    profiles:
+        active: dev

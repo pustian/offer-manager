@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tian.pusen.offer.mapper.CustomerOfferMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="tian.pusen.offer.entity.CustomerOffer">
+		<id column="id" property="id" />
+		<result column="offer_id" property="offerId" />
+		<result column="customer_id" property="customerId" />
+		<result column="price" property="price" />
+		<result column="currency" property="currency" />
+		<result column="carriage_price" property="carriagePrice" />
+		<result column="carriage_currency" property="carriageCurrency" />
+		<result column="fee" property="fee" />
+		<result column="fee_currency" property="feeCurrency" />
+		<result column="status" property="status" />
+		<result column="remark" property="remark" />
+		<result column="is_deleted" property="isDeleted" />
+		<result column="gmt_create" property="gmtCreate" />
+		<result column="gmt_modified" property="gmtModified" />
+	</resultMap>
+
+</mapper>

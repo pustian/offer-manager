@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tian.pusen.offer.mapper.CustomerMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="tian.pusen.offer.entity.Customer">
+		<id column="id" property="id" />
+		<result column="customer_id" property="customerId" />
+		<result column="name" property="name" />
+		<result column="license_no" property="licenseNo" />
+		<result column="short_name" property="shortName" />
+		<result column="name_en" property="nameEn" />
+		<result column="province" property="province" />
+		<result column="city" property="city" />
+		<result column="district" property="district" />
+		<result column="street" property="street" />
+		<result column="phone" property="phone" />
+		<result column="fax" property="fax" />
+		<result column="mail" property="mail" />
+		<result column="linkman" property="linkman" />
+		<result column="account" property="account" />
+		<result column="is_deleted" property="isDeleted" />
+		<result column="grade" property="grade" />
+		<result column="remark" property="remark" />
+		<result column="gmt_create" property="gmtCreate" />
+		<result column="gmt_modified" property="gmtModified" />
+	</resultMap>
+
+</mapper>

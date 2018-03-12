@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: offer-manager
+    profiles:
+        active: dev
+#     cloud:
+#         config:
+#             profile: dev
+#             uri: http://config.finumi.com/
+
+
+

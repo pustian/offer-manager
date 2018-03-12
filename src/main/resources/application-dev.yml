@@ -1,0 +1,27 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/pingchuan?characterEncoding=utf8
+        username: root
+        password: ldap4$
+        driverClassName: com.mysql.jdbc.Driver
+        initialSize: 2
+        minIdle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        maxOpenPreparedStatements: 20
+        filters: stat
+        validationQuery: SELECT 'x'
+
+# 业务含义
+wang:
+    pingchuan:
+        welcome: 歡迎訪問订单首頁 文档地址：http://wangpingchuan.com/swagger-ui.html
